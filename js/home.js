@@ -3,7 +3,7 @@
 console.log("home.js connected");
 
 const home = {
-  templateUrl: '../../templates/home.html',
+  templateUrl: 'templates/home.html',
 
   controller: ["PhotoService", function(PhotoService) {
     const vm = this;
