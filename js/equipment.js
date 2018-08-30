@@ -3,7 +3,7 @@
 console.log("equip.js connected");
 
 const equip = {
-  templateUrl: '../templates/equipment.html',
+  templateUrl: 'templates/equipment.html',
 
   controller: ["PhotoService", "$timeout", function(PhotoService, $timeout) {
     const vm = this;
