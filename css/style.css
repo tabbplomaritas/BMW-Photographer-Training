@@ -137,6 +137,10 @@ nav {
 main {
   margin-top: 2rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
@@ -228,25 +232,30 @@ h2 {
 /* equip pop up */
 
 #equipCard_popUp {
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right bottom, #cbcdce, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right bottom, #cbcdce, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: #232526ad;
   position: fixed;
-  height: 50rem;
-  width: 90%;
-  max-width: 62.5rem;
+  /* height: 50rem; */
+  /* width: 100%; */
+  /* max-width: 62.5rem; */
   padding: 1rem;
-  margin: 1rem auto;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* transform: translate(50%, -50%); */
   display: none;
   overflow-y: auto;
- 
+  display:none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #equipCard_popUp .card {
   width: 90%;
+  max-width: 60rem;
   /* min-height: 100%; */
   overflow-y: auto;
 }
@@ -257,6 +266,7 @@ h2 {
 
 #equipCard_popUp .card img {
   width: 75%;
+  max-width: 36rem;
   margin: 0 auto;
 }
 
@@ -264,12 +274,49 @@ h2 {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 2rem;
-  color: white;
+  font-size: 3rem;
+  color: #265dc2;
   cursor: pointer;
   transition: .25s all;
 }
 
 .closeBtn:hover {
+  color: #414345;
+}
+
+.fa-arrow-alt-circle-up {
+  align-self: flex-end;
+  background-color: white;
+  padding: 1rem;
   color: #265dc2;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* studio */
+
+.carousel {
+  /* border: 2px solid #414345; */
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 68rem;
+  /* background-color: #414345; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.carousel-item img {
+  max-width: 68rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
 }

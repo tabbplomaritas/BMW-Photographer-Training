@@ -9,15 +9,14 @@ const home = {
     const vm = this;
     console.log("controller is a go");
     let toggler = document.querySelector(".collapse");
+    let nav = document.querySelector(".navbar-collapse");
+    let navLink = document.querySelectorAll(".nav-link");
 
+    vm.hideNav = () => {
+      console.log("hidenav");
 
-    //this is not working yet
-    vm.getStarted = () => {
-      console.log(toggler);
-      $(".collapse").collapse();
+      angular.element(nav).removeClass("show");
     }
-
-
   }
 
 

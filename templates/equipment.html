@@ -1,6 +1,6 @@
 <main id="equip" class="animated fadeIn">
 
-<h2>Equipment</h2>
+  <h2>Equipment</h2>
 
   <section class="equip card-container myRounded ">
       <div ng-repeat="item in $ctrl.equip" class="card myRounded shadow" ng-click="$ctrl.equipPopShow(item);">
@@ -14,14 +14,15 @@
         </div>
   </section>
 
-  <section id="equipCard_popUp" class="equip card-container myRounded shadow">
-      <i class="fas fa-times-circle closeBtn" alt="close window" ng-click="$ctrl.equipPopHide();"></i>
+  <section id="equipCard_popUp" class="equip myRounded shadow">
+      
       <div class="card myRounded shadow">
+          <i class="fas fa-times-circle closeBtn" alt="close window" ng-click="$ctrl.equipPopHide();"></i>
           <img class="card-img-top" src={{$ctrl.clickedItem.equipImgSrc}} alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{$ctrl.clickedItem.equipType}}</h5>
             <p>{{$ctrl.clickedItem.equipModel}}</p>
-            <p class="provided">Provided by dealership: {{$ctrl.clickedItem.equipProvide}}</p>
+            <p class="provided">Provided by dealership:{{$ctrl.clickedItem.equipProvide}}</p>
 
             
             <p class="card-text">{{$ctrl.clickedItem.equipText}}</p>
@@ -29,5 +30,6 @@
           </div>
         </div>
   </section>
+  <i class="fas fa-arrow-alt-circle-up backToTop" ng-click="$ctrl.scrollToTop();"> Back to Top</i>
 
 </main>

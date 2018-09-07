@@ -1,1 +1,25 @@
-<h2>Studio</h2>
+<main class="animated fadeIn">
+  <h2>Studio</h2>
+
+  <div id="carouselExampleControls" class="carousel slide shadow" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="../images/cars/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item" ng-repeat="car in $ctrl.carImages">
+          <img class="d-block w-100" src={{car}} alt="Second slide">
+        </div>
+
+      </div>
+      <a target="_self" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carImg_arrow carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a target="_self" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carImg_arrow carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+</main>
