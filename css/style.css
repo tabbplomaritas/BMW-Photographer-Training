@@ -143,6 +143,8 @@ main {
   align-items: center;
 }
 
+
+
 h2 {
   color: #265dc2;
   font-size: 3rem;
@@ -153,7 +155,7 @@ h2 {
 
 /* home view */
 
-.home_intro {
+.intro {
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right bottom, #cbcdce, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right bottom, #cbcdce, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -162,7 +164,7 @@ h2 {
 
 }
 
-.home_intro div {
+.intro div {
   background-color: white;
   padding: 1rem;
   margin: 0;
@@ -173,13 +175,13 @@ h2 {
 
 }
 
-.home_intro p {
+.intro p {
   background-color: white;
   padding: 1rem;
   margin-bottom: 2rem;
 }
 
-.home_intro a {
+#home .intro a {
   text-align: center;
   background-color: #265dc2;
   color: white;
@@ -189,7 +191,7 @@ h2 {
   transition: .3s all;
 }
 
-.home_intro a:hover {
+.intro a:hover {
   background-color: #414345;
   color: white;
   text-decoration: none;\
@@ -318,5 +320,172 @@ background-color: #232526ad;
 }
 
 .carousel-control-next, .carousel-control-prev {
+  opacity: .8;
+}
+
+.carousel-arrow {
+  width: 3rem;
+
+}
+
+
+/* Workflow  */
+
+main p {
+  padding: 1rem;
+  max-width: 60rem;
+}
+
+.rapidrecon {
+  margin-top: 2rem;
+}
+
+.workflow-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 127.5rem;
+}
+
+.thumbnail__wrapper {
+  width: 40rem;
+  height: 100%;
+  margin: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .25s;
+  position: relative;
+  z-index: 4;
+  border-radius: 1rem;
+}
+
+.thumbnail__wrapper:after {
+  content: "";
+  background-color: #265dc288;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 1rem;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  line-height: 20rem;
+  background-color: #265dc2ab;
+}
+
+.thumbnail__wrapper:nth-child(1):after {
+  content: 'Getting Started'; 
+}
+
+.thumbnail__wrapper:nth-child(2):after {
+  content: 'Making Changes'; 
+}
+
+.thumbnail__wrapper:nth-child(3):after {
+  content: 'Leaving Notes'; 
+}
+
+.thumbnail__wrapper img {
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.thumbnail__wrapper:hover {
+  transform: translateY(3px);
+}
+
+.workflow-modal {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal-dialog {
+  max-width: none;
+}
+
+.modal-body {
+  align-self: center;
+  position: relative;
+}
+
+.modal-body .test {
+  position: absolute;
+  background-color: #265dc2;
+  padding: 1rem;
+  color: white;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, calc(50% + 10px) 100%, calc(50% + 15px) calc(100% - 5px), calc(50% - 15px) calc(100% - 5px), calc(50% - 10px) 100%);
+}
+.workflow-modal__img {
+  width: 95%;
+  max-height: 100vh;
+}
+
+.workflow-modal button {
   opacity: 1;
 }
+
+.workflow-modal .closeBtn {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+/* dealership */
+
+.green {
+  color: green;
+}
+
+.white {
+  color: white;
+  text-shadow: 0px 0px 10px #020202;
+}
+
+#dealership ul {
+  max-width: 60rem;
+  text-align: justify;
+}
+
+#dealership a {
+  text-decoration: underline;
+  color: #265dc2;
+}
+
+#dealership ul li {
+  margin-bottom: .5rem;
+}
+
+.info {
+  background-color: #f8f9fa;
+  border-left: 5px solid #265dc2;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 2px -2px #414345;
+}
+
+#accordion {
+ margin: 0 auto;
+}
+
+#accordion .info {
+  width: 100%;
+}
+
+#accordion .card {
+  width: 90%;
+}
+
+
+
