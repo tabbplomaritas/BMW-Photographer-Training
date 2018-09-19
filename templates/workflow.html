@@ -29,8 +29,47 @@
 <main class="animated fadeIn">
   <h2>Workflow</h2>
 
+
+
   <!-- accordion starts -->
   <div id="accordion">
+      <div class="card">
+          <div class="card-header" id="gettingStarted">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#gettingstarted" aria-expanded="false" aria-controls="gettingstarted">
+                Getting Started
+              </button>
+            </h5>
+          </div>
+          <div id="gettingstarted" class="collapse" aria-labelledby="gettingStarted" data-parent="#accordion">
+            <div class="card-body">
+                <section class="info mt-5">
+                    <h3>Getting Started</h3>
+                    <p>A rough overview of moving through your day:
+                      </p>
+                      <ul>
+                        <li>Set up <a>daily worksheet</a></li>
+                        <li>Review google sheets for sold cars</li>
+                        <li>Review Rapid Recon for what to expect in the basement</li>
+                        <li>Bring worksheet to basement and review what's marked for photos</li>
+                        <ul>
+                          <li>If a car is sold, remove the green sign and park the car in an 'exit lane' if possible, making it easier to move your cars needing photos through the lane</li>
+                          <li>If a car is marked in 'photos' on Rapid Recon, but lacks a green sign, and looks very clean with paper floor mats, it's probably ready for photos. Check with detail if you're unsure</li>
+                          <li>If a car has a green sign but looks very dirty, bring to the attention of detail. If it's a small area or one that won't show in photos, you can photograph it and have them touch it up after. If it's very visible in photos, have them spot clean it first.</li>
+                          <li>For all new cars and retired loaners marked for photo, write down the details of the car on the worksheet</li>
+                        </ul>
+                        <li>Take worksheet upstairs and check if we already have photos in the catalog for the new cars and retired loaners</li>
+                        <li>Photograph the cars needing pictures</li>
+                        <li>Once photographed, car can be moved in Rapid Recon from 'Photos' to 'Frontline'</li>
+                         <li>Import the pictures from the card into Lightroom</li>
+                         <li>Batch edit the photos, locally adjust as needed, and export the images</li>
+                         <li>Export the images and upload to vAuto</li>
+                      </ul>
+                  </section>
+            </div>
+          </div>
+        </div>
+        <!-- end of getting started -->
       <div class="card">
         <div class="card-header" id="rapidReconHeading">
           <h5 class="mb-0">
@@ -70,6 +109,21 @@
       </div>
       <!-- end of first accordion item -->
       <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Lightroom
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <!-- end of lightroom card -->
+      <div class="card">
         <div class="card-header" id="vautoHeading">
           <h5 class="mb-0">
             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#vauto" aria-expanded="false" aria-controls="vauto">
@@ -104,20 +158,8 @@
         </div>
       </div>
       <!-- end of vAuto accordion card -->
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Lightroom
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div>
+    
     </div>
+  
 
 </main>
