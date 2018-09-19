@@ -476,7 +476,9 @@ main p {
 }
 
 #accordion {
- margin: 0 auto;
+  width: 100%;
+  margin: 2rem auto;
+
 }
 
 #accordion .info {
@@ -485,6 +487,19 @@ main p {
 
 #accordion .card {
   width: 90%;
+  margin: 0 auto;
+}
+
+#accordion .btn-link {
+  font-size: 1.75rem;
+  width: 100%;
+  color: #232526;
+  transition: .3s all;
+}
+
+#accordion .btn-link:hover {
+  text-decoration: none;
+  color: #265dc2;
 }
 
 
