@@ -364,7 +364,6 @@ main p {
 
 .thumbnail__wrapper:after {
   content: "";
-  background-color: #265dc288;
   z-index: 10000;
   width: 100%;
   height: 100%;
@@ -389,6 +388,22 @@ main p {
 
 .thumbnail__wrapper:nth-child(3):after {
   content: 'Leaving Notes'; 
+}
+
+#vauto .thumbnail__wrapper:after {
+  background-color: #2325269c;
+}
+
+#vauto .thumbnail__wrapper:nth-child(1):after {
+  content: 'Getting Started'; 
+}
+
+#vauto .thumbnail__wrapper:nth-child(2):after {
+  content: 'Uploading'; 
+}
+
+#vauto .thumbnail__wrapper:nth-child(3):after {
+  content: 'Creating Reports'; 
 }
 
 .thumbnail__wrapper img {
