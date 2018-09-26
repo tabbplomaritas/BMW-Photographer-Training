@@ -34,9 +34,9 @@ const data = [
   ],
  //car images
   [
-    '../images/cars/2.jpg',
-    '../images/cars/3.jpg',
-    '../images/cars/4.jpg',
-    '../images/cars/5.jpg',
+    'images/cars/2.jpg',
+    'images/cars/3.jpg',
+    'images/cars/4.jpg',
+    'images/cars/5.jpg',
   ]
 ]
