@@ -39,7 +39,7 @@ const data = [
   ]
 ]
 
-for(let i = 1; i < 26; i++){
+for(let i = 2; i < 26; i++){
   data[1].push(`images/cars/carExample/car-${i}.jpg`)
 }
 console.log(data[1]);
