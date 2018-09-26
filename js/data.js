@@ -34,9 +34,12 @@ const data = [
   ],
  //car images
   [
-    'images/cars/carExample/car-1.jpg',
-    'images/cars/3.jpg',
-    'images/cars/4.jpg',
-    'images/cars/5.jpg',
+
+
   ]
 ]
+
+for(let i = 1; i < 26; i++){
+  data[1].push(`images/cars/carExample/car-${i}.jpg`)
+}
+console.log(data[1]);
